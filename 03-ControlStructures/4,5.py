@@ -5,13 +5,13 @@
 plain_text = 'The early bird catches the worm'
 encrypted_text = ''
 expanded = ' '
-new_text = ' '
+new_char = ' '
 
 for char in plain_text:
     expanded = ord(char)
     expanded = expanded + 1
-    new_char = chr(new_char)
-    new = new_text + new_char
+    new_char = chr(expanded)
+    encrypted_text = encrypted_text + new_char + ' '
 
     # read the character's code (use ord())
     # add one to the character's code
