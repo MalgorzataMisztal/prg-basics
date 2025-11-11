@@ -1,9 +1,12 @@
 ###
-# Checking whether a car exceeded the speed limit
+# House lighting with three bulbs and two switches
+# Checking how many bulbs are illuminating the house
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
-
-if car_speed > speed_limit :
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+light_switch1 = True # False - switch off, True - switch on
+light_switch2 = True
+bulbs_on = 0
+if light_switch1:
+    bulbs_on += 1
+if light_switch2:
+    bulbs_on += 2
+print(f'{bulbs_on} are lit.')
