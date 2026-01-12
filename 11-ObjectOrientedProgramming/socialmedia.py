@@ -12,11 +12,19 @@ class SocialMediaProfile:
         if not self.posts:
             print("no posts to display yet.")
             return
-        for i,post in enumarate(self.posts, 1):
+        
+        for i,post in enumerate(self.posts, 1):
+            print(f"{i}. {post}")
             
 
 
 def main():
     user = SocialMediaProfile('johndoe')
-    user.
+    user.add_post("Hello, world!")
+    user.add_post("Had a great day at the park!")
+    user.add_post("What's up, Natalie? How are you?")
+    user.display_timeline()
+
+if __name__ == "__main__":
+    main()
 

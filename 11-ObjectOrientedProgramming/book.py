@@ -17,7 +17,7 @@ class Book():
     def change_page(self,page):
         self.current_page = page
 
-    def display_info(self):
+    def display_status(self):
         print(f"My favourite book is {self.title}.")
         print(f"Written by {self.author}.")
         print(f"This book has {self.pages} pages.")
